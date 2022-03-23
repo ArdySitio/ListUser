@@ -6,11 +6,6 @@ import { Table, Image, Select, Popover, Button, Spin } from "antd";
 export default function TableUser({ data }) {
   const [value, setValue] = useState("");
   const [label, setLabel] = useState("");
-  const [loading, setLoading] = useState(false);
-
-  if (data == null) {
-    setLoading(true);
-  }
 
   let currentDate = new Date();
   let currentYear = currentDate.getFullYear();
@@ -113,11 +108,7 @@ export default function TableUser({ data }) {
 
   return (
     <>
-      {loading ? (
-        <Spin />
-      ) : (
-        <Table pagination={false} dataSource={data} columns={columns} />
-      )}
+      <Table pagination={false} dataSource={data} columns={columns} />
     </>
   );
 }

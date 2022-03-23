@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import useListUser from "./hooks/useListUser";
 import DataListUser from "./datalistuser/tableuser";
 import "antd/dist/antd.css";

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import moment from "moment";
 import listNation from "../nationality/nation";
-import { Table, Image, Select, Popover, Button, Spin } from "antd";
+import { Table, Image, Select, Popover, Button } from "antd";
 
 export default function TableUser({ data }) {
   const [value, setValue] = useState("");
